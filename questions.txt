@@ -1,0 +1,59 @@
+1) Which of the following code snippets, when inserted in the doGet() method,
+will correctly count the number of GET requests made by a user? (Select one)
+	a HttpSession session = request.getSession();
+	int count = session.getAttribute("count");
+	session.setAttribute("count", count++);
+	b HttpSession session = request.getSession();
+	int count = (int) session.getAttribute("count");
+	session.setAttribute("count", count++);
+	c HttpSession session = request.getSession();
+	int count = ((Integer) session.getAttribute("count")).intValue();
+	session.setAttribute("count", count++);
+	d HttpSession session = request.getSession();
+	int count = ((Integer) session.getAttribute("count")).intValue();
+	session.setAttribute("count", new Integer(++count));
+	
+Answer: d
+
+2) The users of your web application do not accept cookies. Which of the following
+statements are correct? (Select one)
+a You cannot maintain client state.
+b URLs displayed by static HTML pages may not work properly.
+c You cannot use URL rewriting.
+d You cannot set session timeout explicitly.
+Answer: b
+
+3) Which of these method can be used to make the main thread to be executed last among all the threads?
+a) stop()
+b) sleep()
+c) join()
+d) call()
+Ans: b)
+
+4) When comparing java.io.BufferedWriter to java.io.FileWriter, which capability exists as a method in only one of the two?
+
+A.   closing the stream
+B.   flushing the stream
+C.   writing to the stream
+D.   marking a location in the stream
+E.   writing a line separator to the stream
+
+Answer : E
+
+5) Question : Given :
+1. import java.util.*;
+2. public class Old {
+3.  public static Object get0(List list) {
+4.   return list.get(0);
+5.  }
+6. }
+
+ Which three will compile successfully? (Choose three.)
+
+A.  Object o = Old.get0(new LinkedList());
+B.  Object o = Old.get0(new LinkedList<?>());
+C.  String s = Old.get0(new LinkedList<String>());
+D.  Object o = Old.get0(new LinkedList<Object>());
+E.  String s = (String)Old.get0(new LinkedList<String>());
+
+Answer : A, D, E
