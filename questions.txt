@@ -57,3 +57,5 @@ D.  Object o = Old.get0(new LinkedList<Object>());
 E.  String s = (String)Old.get0(new LinkedList<String>());
 
 Answer : A, D, E
+
+https://github.com/hmkcode/Java
